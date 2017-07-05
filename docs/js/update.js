@@ -43,7 +43,7 @@ function update() {
 });
 */
 //  クリックしたときのみ移動
-if (game.input.mousePointer.isDown)
+if (game.input.mousePointer.isDown || game.input.pointer1.isDown)
 {
     //  400はマウスに向かって移動する速度
     game.physics.arcade.moveToPointer(dude, 400); // 指定された表示オブジェクトを一定の速度でポインタの方に移動
